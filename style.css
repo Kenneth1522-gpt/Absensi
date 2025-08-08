@@ -1,0 +1,90 @@
+/* style.css */
+
+/* Animasi fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 1s ease forwards;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #005f73;
+}
+
+p {
+  color: #333;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  margin-top: 25px;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
+}
+
+.qr-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 20px auto;
+  max-width: 260px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.qr-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.qr-box img:hover {
+  transform: scale(1.05);
+}
